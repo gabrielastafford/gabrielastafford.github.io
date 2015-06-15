@@ -1,0 +1,21 @@
+{
+  "name": "gabriela-blog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/myabsley/gabriela-blog",
+  "authors": [
+    "Meghan Yabsley <meghan.yabsley@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "scrollReveal.js": "~2.3.2"
+  }
+}
