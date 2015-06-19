@@ -1,0 +1,41 @@
+body {
+	header#header-home {
+		background-image: url('../img/gabriela.jpg');
+		background-size: cover;
+
+		.container {
+			.wrapper {
+				h1 {
+					font-size: $sizeXL;
+					margin: $spaceXXL 0;
+
+					.name {
+						display: block;
+						font-size: $sizeXXL*1.5;
+					}
+				}
+
+				.actions {
+					display: inline-block;
+					margin-top: $spaceXXL;
+					a {
+						display: inline-block;
+						width: 150px;
+						text-transform: uppercase;
+						text-align: center;
+						font-weight: $weightSemibold;
+						color: $ctaColor00;
+						padding: $spaceXXS/2;
+						margin: 0 $spaceXXL*2;
+						border: 2px solid $borderColor01;
+
+						&:hover {
+							color: $ctaColor01;
+							background-color: $ctaColor00;
+						}
+					}
+				}
+			}
+		}
+	}
+}

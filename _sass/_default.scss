@@ -1,0 +1,108 @@
+body {
+    font-family: $bodyFamily;
+    font-weight: $weightLight;
+    color: $textColor;
+    line-height: 1.5;
+
+    h2 {
+        font-family: $headerFamily;   
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $linkColor;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        padding: 0 $spaceXXL;
+        a {
+            font-size: $sizeS;
+            font-weight: $weightSemibold;
+            text-transform: uppercase;
+            color: $heroText;
+        }
+        #navLeft {
+            width: 50%;
+            float: left;
+        }
+
+        #navRight {
+            width: 50%;
+            float: right;
+
+            ul {
+                float: right;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    padding: 0 $spaceL;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        width: 100%;
+        color: $heroText;
+
+        .container {
+            width: 100%;
+            background-color: transparentize($heroColor, 0.5);
+            padding: $spaceXXL;
+
+            .wrapper {
+                width: 100%;
+                text-align: center;
+                border: 1px solid $borderColor01;
+                padding: $spacingDesktop - $spaceXXL;
+
+                h1 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    section {
+        width: 100%;
+        padding: $spacingDesktop;
+    }
+
+    footer {
+        width: 100%;
+        background-color: $footerColor;
+        padding: $spaceM $spacingDesktop;
+
+        .socialLinks {
+            width: 50%;
+            float: left;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+        .credit {
+            width: 50%;
+            float: right;
+            text-align: right;
+        }
+    }
+}

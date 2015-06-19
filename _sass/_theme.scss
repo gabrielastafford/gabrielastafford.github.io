@@ -1,36 +1,88 @@
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Theme Variables
 
-$spacing-unit:     30px;
+// Colours
+$textColor: #364958;
+$heroText: #FFFFFF;
+$heroColor: #9BD1E5;
+$footerColor: #EFF2F3;
+$highlightColor: #D1FAFF;
+$headerColor: #6A8EAE;
+$ctaColor00: #FFFFFF;
+$ctaColor01: #275DAD;
+$linkColor: #275DAD;
+$borderColor00: transparentize(#000000, 0.9);
+$borderColor01: #FFFFFF;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Typography
+$bodyFamily: "futura-pt", "Futura PT", Helvetica, Arial, sans-serif;
+$headerFamily: "merriweather", Georgia, "Times New Roman", serif;
+$sizeXXS: 0.5rem;
+$sizeXS: 0.75rem;
+$sizeS: 0.875rem;
+$baseSize:  16px;
+$sizeM: 1.125rem;
+$sizeL: 1.635rem;
+$sizeXL: 2.25rem;
+$sizeXXL: 4rem;
+
+$weightThin: 100;
+$weightLight: 300;
+$weightNormal: 400;
+$weightSemibold: 600;
+$weightBold: 700;
+
+// spacing variables
+$spaceXXS: 0.5rem;
+$spaceXS: 0.75rem;
+$spaceS: 0.875rem;
+$baseSpace:  16px;
+$spaceM: 1.125rem;
+$spaceL: 1.635rem;
+$spaceXL: 2.25rem;
+$spaceXXL: 4rem;
+
+$spacingDesktop: $spaceXXL*2;
+$spacingMobile: $spaceXL;
 
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
 
+// Responsive Media Queries
+$mobileWidth: 480px;
+$tabletWidth: 768px;
+$desktopWidth: 1440px;
 
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
+@mixin mobile-only {
+    @media screen and (max-width: $mobileWidth) {
         @content;
     }
 }
+
+@mixin tablet {
+    @media screen and (max-width: $tabletWidth) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tabletWidth) {
+        @content;
+    }
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}
