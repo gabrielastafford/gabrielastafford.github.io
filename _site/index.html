@@ -57,12 +57,44 @@
 	</div>
 </header>
 
-<section id="story">
-  <h2>12 years ago, I started running.</h2>
+<section id="story" class="story part-1 clearfix">
+  <div class="content content-left" data-sr="enter left, hustle 20px">
+	<h2>12 years ago, I started running.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis culpa voluptatum sunt iure reiciendis expedita, nemo libero ipsa facere illo porro quae? Illo mollitia, doloremque quisquam fugit sequi alias.</p>
+  </div>
+  <div class="section-img part-1"></div>
 </section>
 
-<section>
-  <h2>I have not stopped.</h2>
+<section class="story part-2 clearfix">
+    <div class="section-img part-2"></div>
+    <div class="content content-right" data-sr="enter right, ease-in-out 50px">
+	  <h2>I have not stopped.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis culpa voluptatum sunt iure reiciendis expedita, nemo libero ipsa facere illo porro quae? Illo mollitia, doloremque quisquam fugit sequi alias.</p>
+    </div>
+</section>
+
+<section class="story part-3 clearfix">
+	<div class="content content-center">
+	  <h2>Now, I am a varsity athlete competing for the University of Toronto.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis culpa voluptatum sunt iure reiciendis expedita, nemo libero ipsa facere illo porro quae? Illo mollitia, doloremque quisquam fugit sequi alias. Illo mollitia, doloremque quisquam fugit sequi alias.</p>
+	</div>
+</section>
+
+<section id="map" class="story part-4 clearfix">
+	<!-- insert google map with dropping pins here -->
+</section>
+
+<section class="story part-5 clearfix">
+	<div class="content content-center">
+	  <h2>I have had the opportunity to travel to 6 countries to compete in 10 international competitions.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis culpa voluptatum sunt iure reiciendis expedita, nemo libero ipsa facere illo porro quae? Illo mollitia, doloremque quisquam fugit sequi alias. Illo mollitia, doloremque quisquam fugit sequi alias.</p>
+	</div>
+</section>
+
+<section class="story part-6 clearfix">
+	<div class="img-thirds img-1"></div>
+	<div class="img-thirds img-2"></div>
+	<div class="img-thirds img-3"></div>
 </section>
 
 </div>
@@ -87,6 +119,20 @@
 
 </footer>
 
+
+    <script src='/bower_components/scrollReveal.js/dist/scrollReveal.min.js'></script>
+    <script>
+
+      var config = {
+        easing: 'hustle',
+        reset:  true,
+        delay:  'onload',
+        vFactor: 0.90
+      }
+
+      window.sr = new scrollReveal( config );
+
+    </script>
 
   </body>
 

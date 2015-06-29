@@ -38,4 +38,51 @@ body {
 			}
 		}
 	}
+	section.story {
+		h2 {
+			font-size: $sizeL;
+			font-weight: $weightLight;
+		}
+
+		.content:not(.content-center) {
+			width: 60%;
+			float: left;
+			padding: $spaceXL $spaceXXL*2;
+
+			
+			&.content-left {
+				padding-left: 0;
+			}
+
+			&.content-right {
+				padding-right: 0;
+			}
+		}
+
+		.section-img {
+			width: 40%;
+			height: 300px;
+			float: left;
+			background-size: cover;
+
+			&.part-1 {
+				background-image: url('../img/gabriela.jpg');
+			}
+
+			&.part-2 {
+				background-image: url('../img/gabriela.jpg');
+			}
+		}
+
+		&.part-6 {
+			padding: 0 0 $spaceXXL*2 0;
+			.img-thirds {
+				width: 33.3333%;
+				height: 300px;
+				float: left;
+				background-image: url('../img/gabriela.jpg');
+				background-size: cover;
+			}
+		}
+	}
 }

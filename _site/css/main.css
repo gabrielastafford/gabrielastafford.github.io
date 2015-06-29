@@ -222,7 +222,8 @@ body {
   body footer {
     width: 100%;
     background-color: #EFF2F3;
-    padding: 1.125rem 8rem; }
+    padding: 1.125rem 8rem;
+    clear: both; }
     body footer .socialLinks {
       width: 50%;
       float: left; }
@@ -260,3 +261,31 @@ body header#header-home {
       body header#header-home .container .wrapper .actions a:hover {
         color: #275DAD;
         background-color: #FFFFFF; }
+body section.story h2 {
+  font-size: 1.635rem;
+  font-weight: 300; }
+body section.story .content:not(.content-center) {
+  width: 60%;
+  float: left;
+  padding: 2.25rem 8rem; }
+  body section.story .content:not(.content-center).content-left {
+    padding-left: 0; }
+  body section.story .content:not(.content-center).content-right {
+    padding-right: 0; }
+body section.story .section-img {
+  width: 40%;
+  height: 300px;
+  float: left;
+  background-size: cover; }
+  body section.story .section-img.part-1 {
+    background-image: url("../img/gabriela.jpg"); }
+  body section.story .section-img.part-2 {
+    background-image: url("../img/gabriela.jpg"); }
+body section.story.part-6 {
+  padding: 0 0 8rem 0; }
+  body section.story.part-6 .img-thirds {
+    width: 33.3333%;
+    height: 300px;
+    float: left;
+    background-image: url("../img/gabriela.jpg");
+    background-size: cover; }

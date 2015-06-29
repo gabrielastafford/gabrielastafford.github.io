@@ -14,6 +14,20 @@
 
     {% include footer.html %}
 
+    <script src='/bower_components/scrollReveal.js/dist/scrollReveal.min.js'></script>
+    <script>
+
+      var config = {
+        easing: 'hustle',
+        reset:  true,
+        delay:  'onload',
+        vFactor: 0.90
+      }
+
+      window.sr = new scrollReveal( config );
+
+    </script>
+
   </body>
 
 </html>
