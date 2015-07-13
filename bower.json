@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "scrollReveal.js": "~2.3.2"
+    "scrollReveal.js": "~2.3.2",
+    "masonry": "~3.3.1"
   }
 }
