@@ -190,10 +190,12 @@ body {
       color: #FFFFFF; }
     body nav #navLeft {
       width: 50%;
-      float: left; }
+      float: left;
+      margin-top: 1.125rem; }
     body nav #navRight {
       width: 50%;
-      float: right; }
+      float: right;
+      margin-top: 1.125rem; }
       body nav #navRight ul {
         float: right;
         list-style: none; }
@@ -290,7 +292,8 @@ body section.story .section-img {
     background-image: url("../img/gabriela-2.jpg");
     border-radius: 50%; }
   body section.story .section-img.part-8 {
-    background-image: url("../img/family.jpg"); }
+    background-image: url("../img/family.jpg");
+    height: 500px; }
 body section.story.part-4 {
   padding: 0; }
   body section.story.part-4 .map {
