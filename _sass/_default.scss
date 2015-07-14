@@ -83,6 +83,24 @@ body {
         width: 100%;
         padding: $spacingDesktop;
 
+        .actions {
+            a {
+                display: inline-block;
+                width: 150px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: $weightSemibold;
+                color: $ctaColor01;
+                border: 2px solid $ctaColor01;
+                padding: $spaceXXS/2;
+
+                &:hover {
+                    color: $ctaColor01;
+                    background-color: $ctaColor00;
+                }
+            }
+        }
+
         // masonry styling
         .grid-item { width: 200px; }
         .grid-item--width2 { width: 400px; }

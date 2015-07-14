@@ -19,15 +19,9 @@ body {
 					display: inline-block;
 					margin-top: $spaceXXL;
 					a {
-						display: inline-block;
-						width: 150px;
-						text-transform: uppercase;
-						text-align: center;
-						font-weight: $weightSemibold;
 						color: $ctaColor00;
-						padding: $spaceXXS/2;
 						margin: 0 $spaceXXL*2;
-						border: 2px solid $borderColor01;
+						border-color: $ctaColor00;
 
 						&:hover {
 							color: $ctaColor01;
@@ -111,6 +105,56 @@ body {
 
 				&.img-3 {
 					background-image: url('../img/national-title.jpg');
+				}
+			}
+		}
+
+		&.part-9 {
+			padding: 0;
+			.col-thirds {
+				width: 33.33%;
+				height: 300px;
+				float: left;
+				margin-bottom: $spacingDesktop;
+				background-size: cover;
+			}
+
+			.col-1 {
+				padding: 0 $spacingDesktop;
+				.actions {
+					a {
+						display: block;
+						width: 180px;
+						margin: $spaceXXS 0;
+
+						&:hover {
+							background-color: $ctaColor01;
+							color: $ctaColor00;
+						}
+					}
+				}
+			}
+			a {
+				@include transition(all $hoverTransition);
+				.col-2, .col-3 {
+					.overlay {
+						width: 100%;
+						height: 300px;
+						background-color: transparentize($heroColor, 0.5);
+						color: $ctaColor00;
+						text-align: center;
+
+						h3 {
+							margin: 0;
+							padding: $spaceXXL*2 0;
+							text-transform: uppercase;
+						}
+					}
+				}
+
+				&:hover .overlay {
+					@include transition(all $hoverTransition);
+					background-color: transparentize($heroColor, 0.15);
 				}
 			}
 		}

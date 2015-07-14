@@ -221,6 +221,18 @@ body {
   body section {
     width: 100%;
     padding: 8rem; }
+    body section .actions a {
+      display: inline-block;
+      width: 150px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      color: #275DAD;
+      border: 2px solid #275DAD;
+      padding: 0.25rem; }
+      body section .actions a:hover {
+        color: #275DAD;
+        background-color: #FFFFFF; }
     body section .grid-item {
       width: 200px; }
     body section .grid-item--width2 {
@@ -255,15 +267,9 @@ body header#header-home {
     display: inline-block;
     margin-top: 4rem; }
     body header#header-home .container .wrapper .actions a {
-      display: inline-block;
-      width: 150px;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 600;
       color: #FFFFFF;
-      padding: 0.25rem;
       margin: 0 8rem;
-      border: 2px solid #FFFFFF; }
+      border-color: #FFFFFF; }
       body header#header-home .container .wrapper .actions a:hover {
         color: #275DAD;
         background-color: #FFFFFF; }
@@ -312,6 +318,46 @@ body section.story.part-6 {
       background-image: url("../img/snowman.jpg"); }
     body section.story.part-6 .img-thirds.img-3 {
       background-image: url("../img/national-title.jpg"); }
+body section.story.part-9 {
+  padding: 0; }
+  body section.story.part-9 .col-thirds {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    margin-bottom: 8rem;
+    background-size: cover; }
+  body section.story.part-9 .col-1 {
+    padding: 0 8rem; }
+    body section.story.part-9 .col-1 .actions a {
+      display: block;
+      width: 180px;
+      margin: 0.5rem 0; }
+      body section.story.part-9 .col-1 .actions a:hover {
+        background-color: #275DAD;
+        color: #FFFFFF; }
+  body section.story.part-9 a {
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s; }
+    body section.story.part-9 a .col-2 .overlay, body section.story.part-9 a .col-3 .overlay {
+      width: 100%;
+      height: 300px;
+      background-color: rgba(155, 209, 229, 0.5);
+      color: #FFFFFF;
+      text-align: center; }
+      body section.story.part-9 a .col-2 .overlay h3, body section.story.part-9 a .col-3 .overlay h3 {
+        margin: 0;
+        padding: 8rem 0;
+        text-transform: uppercase; }
+    body section.story.part-9 a:hover .overlay {
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      background-color: rgba(155, 209, 229, 0.85); }
 
 body header#header-blog {
   background-image: url("/img/blog-hero.jpg");
