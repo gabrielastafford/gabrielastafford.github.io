@@ -284,7 +284,11 @@ body section.story .section-img {
   body section.story .section-img.part-1 {
     background-image: url("../img/gabriela.jpg"); }
   body section.story .section-img.part-2 {
-    background-image: url("../img/gabriela.jpg"); }
+    background-image: url("../img/gabriela.jpg");
+    border-radius: 50%; }
+  body section.story .section-img.part-7 {
+    background-image: url("../img/gabriela.jpg");
+    border-radius: 50%; }
 body section.story.part-4 {
   padding: 0; }
   body section.story.part-4 .map {
@@ -296,8 +300,13 @@ body section.story.part-6 {
     width: 33.3333%;
     height: 300px;
     float: left;
-    background-image: url("../img/gabriela.jpg");
     background-size: cover; }
+    body section.story.part-6 .img-thirds.img-1 {
+      background-image: url("../img/run.jpg"); }
+    body section.story.part-6 .img-thirds.img-2 {
+      background-image: url("../img/snowman.jpg"); }
+    body section.story.part-6 .img-thirds.img-3 {
+      background-image: url("../img/national-title.jpg"); }
 
 body header#header-blog {
   background-image: url("/img/blog-hero.jpg");

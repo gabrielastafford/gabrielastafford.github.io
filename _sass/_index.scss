@@ -71,6 +71,12 @@ body {
 
 			&.part-2 {
 				background-image: url('../img/gabriela.jpg');
+				border-radius: 50%;
+			}
+
+			&.part-7 {
+				background-image: url('../img/gabriela.jpg');
+				border-radius: 50%;
 			}
 		}
 
@@ -88,8 +94,19 @@ body {
 				width: 33.3333%;
 				height: 300px;
 				float: left;
-				background-image: url('../img/gabriela.jpg');
 				background-size: cover;
+
+				&.img-1 {
+					background-image: url('../img/run.jpg');
+				}
+
+				&.img-2 {
+					background-image: url('../img/snowman.jpg');
+				}
+
+				&.img-3 {
+					background-image: url('../img/national-title.jpg');
+				}
 			}
 		}
 	}
