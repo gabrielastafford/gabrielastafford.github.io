@@ -284,11 +284,13 @@ body section.story .section-img {
   body section.story .section-img.part-1 {
     background-image: url("../img/gabriela.jpg"); }
   body section.story .section-img.part-2 {
-    background-image: url("../img/gabriela.jpg");
+    background-image: url("../img/athlete.jpg");
     border-radius: 50%; }
   body section.story .section-img.part-7 {
-    background-image: url("../img/gabriela.jpg");
+    background-image: url("../img/gabriela-2.jpg");
     border-radius: 50%; }
+  body section.story .section-img.part-8 {
+    background-image: url("../img/family.jpg"); }
 body section.story.part-4 {
   padding: 0; }
   body section.story.part-4 .map {
