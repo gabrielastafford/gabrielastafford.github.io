@@ -285,6 +285,11 @@ body section.story .section-img {
     background-image: url("../img/gabriela.jpg"); }
   body section.story .section-img.part-2 {
     background-image: url("../img/gabriela.jpg"); }
+body section.story.part-4 {
+  padding: 0; }
+  body section.story.part-4 .map {
+    width: 100%;
+    height: 400px; }
 body section.story.part-6 {
   padding: 0 0 8rem 0; }
   body section.story.part-6 .img-thirds {
